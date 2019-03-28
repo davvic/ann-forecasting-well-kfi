@@ -28,8 +28,9 @@ np.random.seed(12)
 
 # In[3]:
 
-filename = input('what is file name? ')
-address = 'C:\\Users\\davidnnamdi\\Downloads\\Documents\\' + filename + '.xlsx'
+# Full filepath required (including the file extension)
+filename = input('what is file path? ')
+address = filename
 column_heads= ['Date', 'Oil', 'WC', 'FTHP', 'Beansize', 'GOR']
 df = pd.read_excel(address, names=column_heads)
 ur = np.float(input('what is UR in MMSTB?')) * 1000000
