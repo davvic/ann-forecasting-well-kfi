@@ -241,7 +241,7 @@ class OptimizedAnnNonLinearRegression:
     #
     # data_y
     #   dependent variable (y) data to be used for training and validation
-    #   (must be same length as x-data for give a 1 to 1 match)
+    #   (must be same length as x-data to give a 1 to 1 match)
     #
     # validation_data_start_index
     #   index to use as start index for the validation data when spliting
